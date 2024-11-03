@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚Library</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="page">
+        <div class="background-image">
+            <div class="logo">
+                <img src="https://www.bing.com/th?id=OIP.jEyEaXmGtzPK4IIUITfiMAAAAA&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="100px" alt="logo img">
+                <h1>ODIN</h1>
+            </div>
+            <p class="attribution">Photo by <a href="https://unsplash.com/@cozyslowlife">Olesia Hnatkevych</a> on <a href="https://unsplash.com">Unsplash</a> </p>
+        </div><!--background-image-->
+ 
+        <div class="form-container">
+            <h4>Add the books name that you have read or to be Read.Mention it in the Liabrary Made for your conviniennce.</h4>
+            <form action="" id="form1" class="form1" >
+               
+                <div class="form-inputs">
+                     <legend>Let's add Book!</legend>
+                    <div class="form-item">
+                        <label for="book-name">book name</label>
+                        <input type="text" id="book-name" name="book-name" required="required" minlength="3" maxlength="20" >
+                    </div>
+                    <div class="form-item">
+                        <label for="author"> author</label>
+                        <input type="text" id="author" name="author" required="required" minlength="3" maxlength="20" >
+                    </div>
+                    <div class="form-item">
+                        <label for="pages-number"> number of pages</label>
+                        <input type="number" id="pages-number" name="pages-number">
+                    </div>
+                    <div class="form-item">
+                        <label for="done-reading">done reading</label>
+                        <input type="checkbox" id="done-reading" name="done-reading" >
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit">Add book</button>
+                        <!-- <p>Already have an account? <a href="./">Log in</a></p> -->
+                    </div><!--form-footer-->
+                </div><!--form-inputs-->
+               
+           </form>
+            <div class="books">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" >book name</th>
+                            <th scope="col" >author</th>
+                            <th scope="col" >pages</th>
+                            <th scope="col" >done reading</th>
+                            <th scope="col" ></th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- javaScript generated
+
+                         <tr data-index="0">
+                            <td>the dip</td>
+                            <td>Joan doe</td>
+                            <td>345</td>
+                            <td><input type="checkbox" checked></td>
+                            <td><button >delete</button></td>
+                        </tr> -->
+                    </tbody>
+
+                </table>
+            </div>
+        </div><!--form-container-->
+    </div><!--page-->
+
+    <script src="./app.js"></script>
+</body>
+</html>
